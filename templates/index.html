@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<!-- Created By Webdevelopment657 -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GuardAI</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
-        /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -21,7 +18,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -36,7 +32,6 @@ html{
     background: #555;
 }
 
-/* all similar content styling codes */
 section{
     padding: 100px 0;
 }
@@ -87,7 +82,6 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
 .navbar{
     position: fixed;
     width: 100%;
@@ -136,7 +130,6 @@ section .title::after{
     color: #fff;
 }
 
-/* menu btn styling */
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -172,7 +165,6 @@ section .title::after{
 }
 
 
-/* home section styling */
 .home{
     display: flex;
     background: url("https://4kwallpapers.com/images/wallpapers/soldier-military-machine-gun-war-silhouette-black-3840x2160-6596.jpg") no-repeat center;
@@ -265,7 +257,6 @@ section .title::after{
 }
 
 
-/* services section styling */
 .services, .teams{
     color:#ffffff;
     background: #111;
@@ -478,7 +469,6 @@ section .title::after{
   color: crimson;
   background: none;
 }
-/* footer section styling */
 footer{
     background: #ffffff;
     padding: 15px 23px;
@@ -494,7 +484,6 @@ footer span a:hover{
 }
 
 
-/* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -653,7 +642,6 @@ footer span a:hover{
         </div>
     </nav>
 
-    <!-- home section start -->
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
@@ -665,7 +653,6 @@ footer span a:hover{
         </div>
     </section>
 
-    <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">CCTV ANALYTICS</h2>
@@ -694,14 +681,12 @@ footer span a:hover{
         </div>
     </section>
 
-    <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">Main Steps</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                        <!-- <i class="fa-light fa-folder"></i> -->
                         <div class="text">Model Training</div>
                         <p>Develop and train YOLOv8 model for object detection, with a focus on weapon classification
                             and feature extraction.
@@ -710,7 +695,6 @@ footer span a:hover{
                 </div>
                 <div class="card">
                     <div class="box">
-                        <!-- <i class="fas fa-chart-line"></i> -->
                         <div class="text">System Integration</div>
                         <p> Integrate Roboflow API, create Flask backend for real-time object detection, email
                             notifications, and law enforcement communication.
@@ -719,7 +703,6 @@ footer span a:hover{
                 </div>
                 <div class="card">
                     <div class="box">
-                        <!-- <i class="fas fa-code"></i> -->
                         <div class="text">Web Interface</div>
                         <p>Design a user-friendly web interface using HTML, CSS, JS, and Flask to interact with the CCTV
                             analytics system and visualize results.
@@ -731,7 +714,6 @@ footer span a:hover{
         </div>
     </section>
 
-    <!-- skills section start -->
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">Facts</h2>
@@ -786,7 +768,6 @@ footer span a:hover{
         </div>
     </section>
 
-    <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
             <h2 class="title">Contact Us</h2>
@@ -845,7 +826,6 @@ footer span a:hover{
         </div>
     </section>
 
-    <!-- footer section start -->
     <footer>
         <span>Created By <a href="https://www.codingnepalweb.com">TeamCyber</a> | <span
                 class="far fa-copyright"></span> 2023 All rights reserved.</span>
@@ -854,14 +834,12 @@ footer span a:hover{
     <script>
         $(document).ready(function(){
     $(window).scroll(function(){
-        // sticky navbar on scroll script
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
         }else{
             $('.navbar').removeClass("sticky");
         }
         
-        // scroll-up button show/hide script
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
         }else{
@@ -869,25 +847,20 @@ footer span a:hover{
         }
     });
 
-    // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
-        // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
     });
 
     $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
 
-    // toggle menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
     var typed = new Typed(".typing", {
         strings: ["Security Analyst", "Crime Fighter"],
         typeSpeed: 100,
@@ -902,7 +875,6 @@ footer span a:hover{
         loop: true
     });
 
-    // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
