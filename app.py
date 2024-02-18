@@ -150,15 +150,7 @@ def webcam():
 def index():
     return render_template('index.html')
 
-@app.route('/stop_webcam', methods=['POST'])
-def stop_webcam():
-    global webcam_streaming, cap
-    webcam_streaming = False
 
-    if cap is not None:
-        cap.release()
-
-    return redirect(url_for('start_webcam'))
 
 
 @app.route('/video_feed', methods=['POST', 'GET'])
